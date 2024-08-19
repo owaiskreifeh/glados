@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice",
+    "age": 28,
+    "interests": ["Bali", "Santorini", "Sydney"]
+  },
+  {
+    "name": "Bob",
+    "age": 34,
+    "interests": ["New York City", "Tokyo", "Kyoto"]
+  },
+  {
+    "name": "Charlie",
+    "age": 25,
+    "interests": ["Reykjavik", "Banff", "Cape Town"]
+  },
+  {
+    "name": "Dana",
+    "age": 32,
+    "interests": ["Marrakech", "Sydney", "Bali"]
+  },
+  {
+    "name": "Eve",
+    "age": 29,
+    "interests": ["Santorini", "Tokyo", "Kyoto"]
+  },
+  {
+    "name": "Frank",
+    "age": 40,
+    "interests": ["New York City", "Cape Town", "Sydney"]
+  },
+  {
+    "name": "Grace",
+    "age": 27,
+    "interests": ["Reykjavik", "Marrakech", "Bali"]
+  },
+  {
+    "name": "Hank",
+    "age": 35,
+    "interests": ["Tokyo", "Banff", "New York City"]
+  },
+  {
+    "name": "Ivy",
+    "age": 30,
+    "interests": ["Santorini", "Reykjavik", "Cape Town"]
+  },
+  {
+    "name": "Jack",
+    "age": 38,
+    "interests": ["Kyoto", "Marrakech", "Sydney"]
+  }
+]

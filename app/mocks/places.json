@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Bali",
+    "avg_temp": 28,
+    "access_to_sea": true,
+    "nature": "Tropical",
+    "avg_budget": 1500,
+    "points_of_interest": [
+      "Ubud Monkey Forest",
+      "Tanah Lot Temple",
+      "Mount Batur"
+    ]
+  },
+  {
+    "name": "Kyoto",
+    "avg_temp": 16,
+    "access_to_sea": false,
+    "nature": "Forested",
+    "avg_budget": 2000,
+    "points_of_interest": [
+      "Fushimi Inari Shrine",
+      "Arashiyama Bamboo Grove",
+      "Kinkaku-ji"
+    ]
+  },
+  {
+    "name": "Santorini",
+    "avg_temp": 22,
+    "access_to_sea": true,
+    "nature": "Mediterranean",
+    "avg_budget": 2500,
+    "points_of_interest": ["Oia Village", "Fira Town", "Red Beach"]
+  },
+  {
+    "name": "New York City",
+    "avg_temp": 13,
+    "access_to_sea": true,
+    "nature": "Urban",
+    "avg_budget": 3000,
+    "points_of_interest": ["Statue of Liberty", "Central Park", "Times Square"]
+  },
+  {
+    "name": "Cape Town",
+    "avg_temp": 18,
+    "access_to_sea": true,
+    "nature": "Coastal",
+    "avg_budget": 1800,
+    "points_of_interest": ["Table Mountain", "Robben Island", "V&A Waterfront"]
+  },
+  {
+    "name": "Sydney",
+    "avg_temp": 21,
+    "access_to_sea": true,
+    "nature": "Coastal",
+    "avg_budget": 2700,
+    "points_of_interest": [
+      "Sydney Opera House",
+      "Bondi Beach",
+      "Harbour Bridge"
+    ]
+  },
+  {
+    "name": "Tokyo",
+    "avg_temp": 15,
+    "access_to_sea": true,
+    "nature": "Urban",
+    "avg_budget": 3500,
+    "points_of_interest": ["Tokyo Tower", "Shibuya Crossing", "Meiji Shrine"]
+  },
+  {
+    "name": "Reykjavik",
+    "avg_temp": 5,
+    "access_to_sea": true,
+    "nature": "Nordic",
+    "avg_budget": 2200,
+    "points_of_interest": ["Blue Lagoon", "Hallgrimskirkja", "Golden Circle"]
+  },
+  {
+    "name": "Marrakech",
+    "avg_temp": 19,
+    "access_to_sea": false,
+    "nature": "Desert",
+    "avg_budget": 1200,
+    "points_of_interest": ["Jemaa el-Fnaa", "Bahia Palace", "Saadian Tombs"]
+  },
+  {
+    "name": "Banff",
+    "avg_temp": 2,
+    "access_to_sea": false,
+    "nature": "Mountainous",
+    "avg_budget": 1600,
+    "points_of_interest": ["Banff National Park", "Lake Louise", "Moraine Lake"]
+  }
+]
