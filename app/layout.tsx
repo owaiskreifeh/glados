@@ -4,13 +4,14 @@ import "./globals.css";
 import "./vscode-code-styles.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Roboto({ 
+const inter = Roboto({
   weight: "400",
+  subsets: ["latin"],
  });
 
 export const metadata: Metadata = {
-  title: "JSON to YUP",
-  description: "Convert JSON Schema to YUP",
+  title: "GlaDOS",
+  description: "Collection of AI tools",
 };
 
 export default function RootLayout({

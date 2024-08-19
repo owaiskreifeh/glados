@@ -148,7 +148,7 @@ function ChatMessage({ message }: { message: ChatCompletionMessageParam }) {
       )}
       <MarkdownPreview
         style={{ background: "transparent" }}
-        source={message.content ?? ""}
+        source={typeof message.content === 'string' ? message.content : ''}
       />
     </div>
   );
