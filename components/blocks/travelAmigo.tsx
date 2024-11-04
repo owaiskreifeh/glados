@@ -148,7 +148,7 @@ function ChatMessage({ message }: { message: ChatCompletionMessageParam }) {
       )}
       <MarkdownPreview
         style={{ background: "transparent" }}
-        source={typeof message.content === 'string' ? message.content : ''}
+        source={typeof message.content === "string" ? message.content : ""}
       />
     </div>
   );
@@ -292,32 +292,34 @@ export default function TravelAmigo() {
             );
           })}
       </div>
-      <div className="flex gap-4 items-center">
-        <div className="flex-1">
-          <Textarea
-            placeholder="lets find a place to go!!! ¿A donde quieres ir? "
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          />
-          <span className="text-xs text-gray-400">
-            * This will always use way more tokens!
-          </span>
+      <form>
+        <div className="flex gap-4 items-center">
+          <div className="flex-1">
+            <Textarea
+              placeholder="lets find a place to go!!! ¿A donde quieres ir? "
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+            <span className="text-xs text-gray-400">
+              * This will always use way more tokens!
+            </span>
+          </div>
+          <div className="flex gap-4">
+            <Button
+              disabled={loading}
+              size="icon"
+              type="button"
+              onClick={() => {
+                handleSend();
+              }}
+            >
+              <SendIcon />
+              {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            </Button>
+            <SettingsDialog />
+          </div>
         </div>
-        <div className="flex gap-4">
-          <Button
-            disabled={loading}
-            size="icon"
-            type="button"
-            onClick={() => {
-              handleSend();
-            }}
-          >
-            <SendIcon />
-            {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-          </Button>
-          <SettingsDialog />
-        </div>
-      </div>
+      </form>
     </div>
   );
 }

@@ -32,7 +32,7 @@ import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { Badge } from "../ui/badge";
-import { complete } from "@/lib";
+import { complete, runAfterInteraction } from "@/lib";
 import { Loader2 } from "lucide-react";
 
 type InstructionType = "Example" | "Explanation" | "Best Practice";
@@ -50,7 +50,6 @@ function buildPrompt(options: PromptOptions): string {
   let prompt = "You are an expert in ";
   prompt += ` ${options.language} programming language. `;
   prompt += ` the user will give you a feature, algorithm, or concept. `;
-
 
   prompt += `You have been asked to `;
   switch (options.instructionType) {
@@ -80,7 +79,6 @@ function buildPrompt(options: PromptOptions): string {
   prompt += ` that uses the ${options.language} language. `;
   prompt += ` write a complete and comprehensive`;
 
-
   return prompt;
 }
 
@@ -102,11 +100,15 @@ export default function PromptBuilder() {
 
   const handleSubmit = (data: any) => {
     console.log(data);
+    handleSend();
   };
 
   const handleChange = (data: any) => {
+    runAfterInteraction(() => {
     //@ts-ignore
-    setSystemPrompt(buildPrompt(form.getValues()));
+      const prompt = buildPrompt(form.getValues());
+      setSystemPrompt(prompt);
+    });
   };
 
   const handleCancel = () => {
